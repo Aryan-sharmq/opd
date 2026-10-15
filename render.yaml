@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: vision-radar
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: VISION_RADAR_TOKEN_TTL_SECONDS
+        value: "3600"
